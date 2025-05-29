@@ -11,7 +11,7 @@ output_path = "../data/transfermarkt_clean_amostra.csv"
 df = pd.read_csv(csv_path)
 
 # Amostragem aleatória: 100.000 linhas
-df_amostra = df.sample(n=200_000, random_state=42)
+df_amostra = df.sample(n=100_000, random_state=42)
 
 # Salvar na mesma pasta dos dados
 df_amostra.to_csv(output_path, index=False)
